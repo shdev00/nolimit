@@ -5,7 +5,57 @@ import imgW211 from "../assets/1900f8207e4f9f54b749cff985df73aac8c44509.png";
 import imgScreenshot20260224At34135Pm1 from "../assets/358c83f9ee4cb440d306cc5a5c4c43209c64d780.png";
 import imgScreenshot20260224At33952Pm1 from "../assets/7e6feab11736e6d4ff0f7e4d72d3a208dc3435cc.png";
 import imgW511 from "../assets/dda9ddf98bcef1501a24eede91678cadf12548a3.png";
+import affiliates from "../assets/affiliateshq.png"
 import CoterieVoFinalNew from "./CoterieVoFinalNew111";
+
+function Affiliates() {
+    return (
+        <div className="relative size-full" data-name="Affiliates">
+            <h2 className="font-['Rangen'] text-[50px] leading-[1.2] tracking-[2px] text-center pb-[60px] xl:scale-[1.1]">Our Co-Authors</h2>
+            <img src={affiliates} className="w-[681px] h-[370.1px] xl:scale-[1.1] object-contain ml-[20.4%] xl:ml-[23%]"/>
+        </div>
+    )
+}
+
+function ImageGridSection() {
+    return (
+        <div className="absolute top-[1958px] xl:scale-[0.65] xl:top-[1450px] left-1/2 -translate-x-1/2 w-full max-w-[1140px] grid grid-cols-3 gap-[20px]">
+
+            {/* ROW 1 */}
+            <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At34231Pm1} className="w-full h-full object-cover" />
+            </div>
+            <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At34135Pm1} className="w-full h-full object-cover" />
+            </div>
+            <div className="h-[652px] w-[367px] rounded-[24px] overflow-hidden">
+                <img src={imgW511} className="w-full h-full object-cover" />
+            </div>
+
+            {/* ROW 2 — FEATURE (BIG) */}
+            <div className="col-span-3 h-[640px] w-[1137px] rounded-[24px] overflow-hidden">
+                <img src={imgW211} className="w-full h-full object-cover" />
+            </div>
+
+            {/* ROW 3 */}
+            <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At34231Pm1} className="w-full h-full object-cover" />
+            </div>
+            <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At33952Pm1} className="w-full h-full object-cover" />
+            </div>
+            <div className="h-[652px] w-[367px]  rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At34135Pm1} className="w-full h-full object-cover" />
+            </div>
+
+            {/* ROW 4 — FEATURE (BIGGER) */}
+            <div className="col-span-3 h-[640px] w-[1137px] rounded-[24px] overflow-hidden">
+                <img src={imgScreenshot20260224At33952Pm1} className="w-full h-full object-cover" />
+            </div>
+
+        </div>
+    );
+}
 
 function WhatWeDoSection() {
     return (
@@ -210,7 +260,7 @@ function Frame10() {
 
 function Frame11() {
   return (
-    <div className="absolute content-stretch flex gap-[20px] items-center left-[72px] top-[3754px]">
+    <div className="absolute content-stretch flex gap-[20px] items-center left-[72px] top-[4254px]">
         {/*<Frame8 />
       <Frame10 />*/}
     </div>
@@ -418,7 +468,7 @@ function Frame2() {
 
 function MobileFooter() {
   return (
-    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[289px] items-center justify-center left-0 px-[36px] py-[80px] top-[4872px] w-full" data-name="Mobile-Footer">
+    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[289px] items-center justify-center left-0 px-[36px] py-[80px] top-[5562px] w-full" data-name="Mobile-Footer">
       <Frame2 />
     </div>
   );
@@ -574,51 +624,23 @@ export default function SilentHWebsiteHomeDesktop() {
                       {"Our Beliefs."}
                   </p>
               </div>
-              <div className="absolute h-[380px] left-[70px] top-[1958px] w-[367px]" data-name="Component 8">
-                  <div className="absolute inset-0 rounded-[32px]" data-name="Screenshot 2026-02-24 at 3.42.31 PM 1">
-                      <img alt=""
-                           className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full"
-                           src={imgScreenshot20260224At34231Pm1}/>
-                  </div>
-              </div>
-              <div className="absolute h-[426px] left-[72px] top-[2509px] w-[560px]" data-name="Component 15">
-                  <div className="absolute aspect-[560/426] left-0 right-0 top-0" data-name="w2 1 1">
-                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-                           src={imgW211}/>
-                  </div>
-              </div>
-              <div className="absolute h-[258px] left-[calc(58.33%+0.33px)] top-[1958px] w-[463px]"
-                   data-name="Component 10">
-                  <div className="absolute aspect-[1907/1064] left-0 right-0 rounded-[32px] top-0"
-                       data-name="Screenshot 2026-02-24 at 3.41.35 PM 1">
-                      <img alt=""
-                           className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full"
-                           src={imgScreenshot20260224At34135Pm1}/>
-                  </div>
-              </div>
-              <div className="absolute h-[565px] left-[calc(50%+12px)] top-[2509px] w-[558px]" data-name="Component 11">
-                  <div className="absolute inset-0 rounded-[32px]" data-name="Screenshot 2026-02-24 at 3.39.52 PM 1">
-                      <img alt=""
-                           className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[32px] size-full"
-                           src={imgScreenshot20260224At33952Pm1}/>
-                  </div>
-              </div>
-              <div className="absolute h-[476px] left-[calc(33.33%+30.33px)] top-[1958px] w-[269px]"
-                   data-name="Component 13">
-                  <div className="absolute aspect-[269/476] left-0 right-0 top-0" data-name="w5 1 1">
-                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full"
-                           src={imgW511}/>
-                  </div>
-              </div>
+              <ImageGridSection/>
               <Frame19/>
-              <div className="absolute h-[480px] -left-29 top-[3154px] w-screen" data-name="NotLimited-Mickey 1">
-                      <WhatWeDoSection/>
+
+
+              <div className="absolute top-[3632px] -left-29 w-screen">
+                  <WhatWeDoSection/>
+              </div>
+              <div className="absolute h-[480px] -left-29 top-[4374px] w-screen" data-name="NotLimited-Mickey 1">
                   <video autoPlay className="absolute max-w-none object-cover size-full" controlsList="nodownload" loop
                          playsInline>
                       <source src="/NLMICKEY.mp4"/>
                   </video>
               </div>
               <Frame11/>
+              <div className="absolute not-italic text-center top-[4974px] w-full whitespace-pre-wrap">
+              <Affiliates/>
+              </div>
               {/*<div
                   className="-translate-x-1/2 absolute left-1/2 not-italic text-center top-[4231px] uppercase w-[754px] whitespace-pre-wrap"
                   style={{
@@ -640,7 +662,7 @@ export default function SilentHWebsiteHomeDesktop() {
               <Frame18/>*/}
           </div>
       </div>
-        <MobileFooter/>
-    </div>
-  );
+            <MobileFooter/>
+        </div>
+    );
 }
