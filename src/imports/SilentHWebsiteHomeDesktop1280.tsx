@@ -404,19 +404,28 @@ function Frame18() {
   );
 }
 
-function SecondaryButtonMobile() {
+function Contactus() {
   return (
-    <div className="content-stretch flex items-center justify-center p-[16px] relative shrink-0" data-name="SecondaryButton - Mobile">
-      <div aria-hidden="true" className="absolute border border-[#f1e9da] border-solid inset-0 pointer-events-none" />
-      <p className="font-['Helvetica:Regular',sans-serif] leading-[1.2] not-italic relative shrink-0 text-[#f1e9da] text-[16px] tracking-[3.2px] uppercase">join our mailing list</p>
-    </div>
+      <div>
+      <div className="content-stretch flex items-center justify-center px-[16px] py-[20px] mt-[5%] relative shrink-0"
+           data-name="contactus">
+          <div aria-hidden="true" className="absolute  inset-0 pointer-events-none"/>
+          <p className="font-['Rangen'] font-[400] leading-[1.2] font-normal relative shrink-0 text-[#f1e9da] text-[24px] tracking-[0.8px] ">
+              {"Contact Us\n"}</p>
+      </div>
+          <div className="content-stretch flex items-center justify-center px-[16px] pb-[32px] relative shrink-0"
+               >
+          <p className="font-['Helvetica:Regular',sans-serif] leading-[1.2] not-italic relative shrink-0 font-normal font-[400] text-[#f1e9da] text-[16px] tracking-[3.2px] uppercase">
+              INFO@NOTLIMITED.CA</p>
+          </div>
+      </div>
   );
 }
 
 function LucideInstagram() {
-  return (
-    <div className="relative shrink-0 size-[24px]" data-name="lucide/instagram">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+    return (
+        <div className="relative shrink-0 size-[24px]" data-name="lucide/instagram">
+        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
         <g id="lucide/instagram">
           <path d={svgPaths.p18a68ff0} id="Vector" stroke="var(--stroke-0, #F1E9DA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
         </g>
@@ -462,25 +471,25 @@ function Frame() {
 function Frame1() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] items-center justify-center relative shrink-0 w-[235px]">
-      <p className="font-['Helvetica:Bold',sans-serif] leading-[1.2] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[20px] text-center tracking-[1.4px] uppercase w-[min-content] whitespace-pre-wrap">Let's get social</p>
+      <p className="font-['Rangen'] leading-[1.2] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[20px] text-center tracking-[0.8px] w-[min-content] whitespace-pre-wrap">Let's get social</p>
       <Frame />
     </div>
   );
 }
 
-function Frame2() {
+function Footercontent() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-center justify-center relative shrink-0 w-[1172px]">
-      <SecondaryButtonMobile />
+    <div className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
+      <Contactus />
       <Frame1 />
     </div>
   );
 }
 
-function MobileFooter() {
+function Footer() {
   return (
-    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[289px] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
-      <Frame2 />
+    <div className="absolute bg-[#3a2e2a] content-stretch flex flex-col h-[35vh] 2xl:h-[40vh] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
+      <Footercontent />
     </div>
   );
 }
@@ -501,7 +510,7 @@ function BeliefsSec() {
     return (
         <div className="max-w-[1111px] flex flex-col gap-[40px] text-[#3a2e2a]">
             <div className="max-w-[1111px] flex flex-col gap-[48px] text-[#3a2e2a]">
-            <p className="font-['Rangen'] ml-[45%] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a]">
+            <p className="font-['Rangen'] ml-[45%] text-[50px] mb-[40px] leading-[60px] tracking-[2px] text-[#3a2e2a]">
                 Our Beliefs.
             </p>
             </div>
@@ -552,15 +561,66 @@ function BeliefsSec() {
 
 export default function SilentHWebsiteHomeDesktop() {
     return (
-        <div className="bg-[#f1e9da] w-full overflow-x-hidden">
+        <div className="bg-[#f1e9da] w-full overflow-x-hidden relative">
+            {/* Background gradient animations - full width */}
+            <div className="z-0 absolute bg-[#f1e9da] h-[4047px] left-0 right-0 overflow-clip top-[700px]" data-name="Component 7">
+                <div className="absolute left-[-196px] size-[663px] top-[-151px]" style={{ animation: 'float-bubble-1 25s ease-in-out infinite' }}>
+                    <div className="absolute inset-[-75.41%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1663 1663">
+                            <g filter="url(#filter0_f_1_266)" id="Ellipse 1">
+                                <circle cx="831.5" cy="831.5" fill="var(--fill-0, #E4572E)" r="331.5" fillOpacity="0.5"/>
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1663" id="filter0_f_1_266" width="1663" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_266" stdDeviation="250" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div className="absolute h-[594px] right-[-200px] top-[-92px] w-[560px]" style={{ animation: 'float-bubble-2 30s ease-in-out infinite' }}>
+                    <div className="absolute inset-[-67.34%_-71.43%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1360 1394">
+                            <g filter="url(#filter0_f_1_268)" id="Ellipse 2">
+                                <ellipse cx="680" cy="697" fill="var(--fill-0, #7B8B6F)" rx="280" ry="297" fillOpacity="0.5" />
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1394" id="filter0_f_1_268" width="1360" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_268" stdDeviation="200" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div className="absolute left-1/2 -translate-x-1/2 size-[568px] top-[771px]" style={{ animation: 'float-bubble-3 28s ease-in-out infinite' }}>
+                    <div className="absolute inset-[-88.03%]">
+                        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1568 1568">
+                            <g filter="url(#filter0_f_1_253)" id="Ellipse 3">
+                                <circle cx="784" cy="784" fill="var(--fill-0, #3A2E2A)" r="284" fillOpacity="0.5"/>
+                            </g>
+                            <defs>
+                                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="1568" id="filter0_f_1_253" width="1568" x="0" y="0">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                                    <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                                    <feGaussianBlur result="effect1_foregroundBlur_1_253" stdDeviation="250" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
 
-        {/* HERO */}
+                {/* HERO */}
             <section className="relative w-full h-[87vh]">
                 <CoterieVoFinalNew />
             </section>
 
             {/* STORY SECTION */}
-            <section className="max-w-[1280px] mx-auto px-[40px] mt-[160px] mb-[139px] flex items-start">
+            <section className="relative z-10 max-w-[1280px] mx-auto px-[40px] mt-[160px] mb-[139px] flex items-start">
 
                 <div className="max-w-[420px]">
                     <p className="font-['Rangen'] text-[50px] leading-[60px] tracking-[2px] text-[#3a2e2a] whitespace-pre-wrap">
@@ -591,12 +651,12 @@ export default function SilentHWebsiteHomeDesktop() {
             {/* BELIEFS TITLE */}
 
             {/* BELIEFS CONTENT */}
-            <section className="max-w-[1280px] mx-auto">
+            <section className="relative z-10 max-w-[1280px] mx-auto">
                 <BeliefsSec />
             </section>
 
             {/* IMAGE GRID */}
-            <section className="mt-[140px] flex justify-center">
+            <section className="relative z-10 mt-[140px] flex justify-center">
                 <div className="w-full max-w-[1140px] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
@@ -643,7 +703,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
             {/* FOOTER */}
             <footer className="mt-[130px]">
-                <MobileFooter />
+                <Footer />
             </footer>
 
         </div>
