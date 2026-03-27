@@ -17,7 +17,19 @@ import HeroSec from "./HeroSec";
 import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
-import MobileAuthors from "../assets/affiliatesmobnew.png"
+import MobileAuthors from "../assets/affiliatesmobnew.png";
+import Vid1 from "../assets/Vid1-compressed.mp4";
+import Vid2 from "../assets/Vid2-compressed.mp4";
+import Vid3 from "../assets/Vid3-compressed.mp4";
+import Vid4 from "../assets/vid4-compressed.mp4";
+import Vid5 from "../assets/vid5-compressed.mp4";
+import Vid6 from "../assets/vid6-compressed.mp4";
+import Vid7 from "../assets/vid7-compressed.mp4";
+import Vid8 from "../assets/vid8-compressed.mp4";
+import {useRef, useState} from "react";
+import { VolumeX, Volume2 } from "lucide-react";
+
+
 
 function Affiliates() {
     return (
@@ -745,6 +757,72 @@ function FooterContentD() {
     );
 }
 
+function HoverVideo({ img, video, className }) {
+    const videoRef = useRef(null);
+    const [muted, setMuted] = useState(true);
+
+    const toggleMute = (e) => {
+        e.stopPropagation(); // prevent hover conflicts
+        setMuted((prev) => {
+            const newMuted = !prev;
+            if (videoRef.current) {
+                videoRef.current.muted = newMuted;
+            }
+            return newMuted;
+        });
+    };
+
+    return (
+        <div
+            className={`relative overflow-hidden rounded-[24px] group ${className}`}
+            onMouseEnter={() => videoRef.current?.play()}
+            onMouseLeave={() => {
+                videoRef.current?.pause();
+                videoRef.current.currentTime = 0;
+            }}
+        >
+            {/* IMAGE */}
+            <img
+                src={img}
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0"
+            />
+
+            {/* VIDEO */}
+            <video
+                ref={videoRef}
+                muted={muted}
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+                <source src={video} type="video/mp4" />
+            </video>
+
+            {/* 🔊 MUTE BUTTON */}
+            <button
+                onClick={toggleMute}
+                className="
+                    absolute bottom-[12px] right-[12px]
+                    w-[36px] h-[36px]
+                    bg-black/40 backdrop-blur-sm
+                    border border-white/30
+                    rounded-full
+                    flex items-center justify-center
+                    text-[#F1E9DA] text-[14px]
+                    opacity-0 group-hover:opacity-100
+                    transition-opacity duration-300
+                "
+            >
+                {muted ? (
+                    <VolumeX size={16} strokeWidth={2} />
+                ) : (
+                    <Volume2 size={16} strokeWidth={2} />
+                )}
+            </button>
+        </div>
+    );
+}
+
 function FootercontentM() {
     return (
         <div
@@ -1130,20 +1208,20 @@ export default function SilentHWebsiteHomeDesktop() {
                 <div className="w-full max-w-[1140px] 2xl:scale-[1.5] grid grid-cols-3 gap-[20px]">
 
                     {/* row 1 */}
-                    <img src={img1} className="h-[652px] object-cover rounded-[24px]"/>
-                    <img src={img2} className="h-[652px] object-cover rounded-[24px]"/>
-                    <img src={img3} className="h-[652px] object-cover rounded-[24px]"/>
+                    <HoverVideo img={img1} video={Vid1} className="h-[652px]" />
+                    <HoverVideo img={img2} video={Vid2} className="h-[652px]" />
+                    <HoverVideo img={img3} video={Vid3} className="h-[652px]" />
 
                     {/* feature */}
-                    <img src={img4} className="col-span-3 h-[640px] object-cover rounded-[24px]"/>
+                    <HoverVideo img={img4} video={Vid4} className="col-span-3 h-[640px]" />
 
                     {/* row 3 */}
-                    <img src={img6} className="h-[652px] object-cover rounded-[24px]"/>
-                    <img src={img7} className="h-[652px] object-cover rounded-[24px]"/>
-                    <img src={img8} className="h-[652px] object-cover rounded-[24px]"/>
+                    <HoverVideo img={img6} video={Vid5} className="h-[652px]" />
+                    <HoverVideo img={img7} video={Vid6} className="h-[652px]" />
+                    <HoverVideo img={img8} video={Vid7} className="h-[652px]" />
 
                     {/* bottom feature */}
-                    <img src={img9} className="col-span-3 h-[640px] object-cover rounded-[24px]"/>
+                    <HoverVideo img={img9} video={Vid8} className="col-span-3 h-[640px]" />
 
                 </div>
             </section>

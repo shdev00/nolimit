@@ -33,20 +33,26 @@ export default function MobileHero() {
                 className="md:hidden fixed top-0 left-0 w-full h-[72px] bg-[#B64220] z-50 flex items-center justify-between px-[20px]">
 
                 {/* LOGO */}
-                <div className="w-[36px] h-[36px] flex items-center">
+                <button
+                    onClick={() => {
+                        window.scrollTo({top: 0, behavior: "smooth"});
+                        setMenuOpen(false); // optional: also close menu if open
+                    }}
+                    className="w-[36px] h-[36px] flex items-center"
+                >
                     <img
                         src={MobLogo}
                         alt="logo"
                         className="w-full h-full object-contain"
                     />
-                </div>
+                </button>
 
                 {/* HAMBURGER */}
                 <button onClick={() => setMenuOpen(true)}>
                     <div
                         className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center">
                         <div className="flex flex-col gap-[4px]">
-                            <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
+                        <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
                             <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
                             <div className="w-[14px] h-[2px] bg-[#F1E9DA]"/>
                         </div>
