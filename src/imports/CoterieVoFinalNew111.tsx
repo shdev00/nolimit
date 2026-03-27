@@ -62,7 +62,7 @@ export default function CoterieVoFinalNew() {
 
           {/* NOTLIMITED text and tagline - positioned from screen edge */}
           <div
-              className="absolute content-stretch flex flex-col gap-[32px] items-start left-[48px] top-[30%] w-[36.25%] max-w-[464px] z-10">
+              className="absolute content-stretch flex flex-col gap-[32px] items-start left-[48px] top-[30%] w-[36.25%] 2xl:scale-[1.2] 2xl:ml-[70px] 2xl:left-0 2xl:top-[40%] 2xl:max-w-[564px] max-w-[464px] z-10">
               <Frame1616/>
           </div>
 
