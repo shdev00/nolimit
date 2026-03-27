@@ -90,7 +90,7 @@ export default function MobileHero() {
             </nav>
 
             {menuOpen && (
-                <div className="fixed inset-0 z-40 flex">
+                <div className="fixed inset-0 z-60 flex">
 
                     {/* RIGHT PANEL */}
                     <div className="w-full h-full bg-[#3a2e2a] flex flex-col p-[32px]">
@@ -98,14 +98,16 @@ export default function MobileHero() {
                         {/* CLOSE BUTTON */}
                         <div className="flex justify-end mb-[40px]">
                             <button onClick={() => setMenuOpen(false)}>
-                                <div className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center text-[#F1E9DA] text-[18px]">
+                                <div
+                                    className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center text-[#F1E9DA] text-[18px]">
                                     ✕
                                 </div>
                             </button>
                         </div>
 
                         {/* MENU ITEMS */}
-                        <div className="flex flex-col gap-[24px] text-[#F1E9DA] text-[32px] tracking-[2px] uppercase font-['Helvetica']">
+                        <div
+                            className="flex flex-col gap-[24px] text-[#F1E9DA] text-[32px] tracking-[2px] uppercase font-['Helvetica']">
 
                             <a className="
                                     font-['AnonymousPro',monospace]
