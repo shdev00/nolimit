@@ -2,10 +2,14 @@ import Rectangle from "./Rectangle1";
 import Frame1616 from "./Frame1616";
 import Line4 from "./Line4";
 import imgHeroBackground from "../assets/b88c1766df9500c17fb036b3cfd4047d2efe8cc1.png";
-import banner from "../assets/banner-padded-new.mp4";;
+import banner from "../assets/banner-padded-new.mp4";
+import { useState } from "react";
 
 
 export default function CoterieVoFinalNew() {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
   return (
       <div className="relative size-full" data-name="Coterie_VO_FINAL New11 1">
           {/* Image background - full width */}
@@ -22,7 +26,29 @@ export default function CoterieVoFinalNew() {
               </video>
 
           </div>
-          <nav className="absolute top-[16px] right-[48px] z-20 flex gap-[32px]">
+
+          {/* MOBILE NAV BAR
+          <div className="md:hidden absolute top-0 left-0 w-full h-[72px] bg-[#B64220] z-30 flex items-center justify-between px-[20px]">
+
+              {/ LOGO /}
+              <div className="text-[#F1E9DA] text-[28px] font-bold">
+                  N
+              </div>
+
+              {/* HAMBURGER /}
+              <button onClick={() => setMenuOpen(true)}>
+                  <div className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center">
+                      <div className="flex flex-col gap-[4px]">
+                          <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
+                          <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
+                          <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
+                      </div>
+                  </div>
+              </button>
+
+          </div>*/}
+
+          <nav className="hidden md:flex absolute top-[16px] right-[48px] z-20 flex gap-[32px]">
 
               <a
                   href="#beliefs"
