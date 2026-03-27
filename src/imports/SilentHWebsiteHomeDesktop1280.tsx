@@ -630,18 +630,81 @@ function Socials() {
   );
 }
 
+function Cities() {
+    return (
+        <div className="flex flex-col items-center gap-[28px] mt-[80px]">
+
+            {/* TORONTO */}
+            <div className="flex flex-col items-center gap-[6px]">
+                <p className="
+          font-['Helvetica',sans-serif]
+          font-[700]
+          text-[#F1E9DA]
+          text-[15px]
+          2xl:text-[26px]
+          tracking-[2.8px]
+          leading-[16.8px]
+        ">
+                    Toronto
+                </p>
+
+                <p className="
+          font-['Helvetica',sans-serif]
+          font-[400]
+          text-[#F1E9DA]
+          text-[14px]
+          2xl:text-[22px]
+          tracking-[2px]
+          leading-[16.8px]
+        ">
+                    383 Adelaide St West
+                </p>
+            </div>
+
+            {/* NEW YORK */}
+            <div className="flex flex-col items-center gap-[6px]">
+                <p className="
+          font-['Helvetica',sans-serif]
+          font-[700]
+          text-[#F1E9DA]
+          text-[15px]
+          2xl:text-[26px]
+          tracking-[2.8px]
+          leading-[16.8px]
+        ">
+                    New York
+                </p>
+
+                <p className="
+          font-['Helvetica',sans-serif]
+          font-[400]
+          text-[#F1E9DA]
+          text-[14px]
+          2xl:text-[22px]
+          leading-[16.8px]
+          tracking-[2.8px]
+        ">
+                    416 West 13th St
+                </p>
+            </div>
+
+        </div>
+    );
+}
+
 function Footercontent() {
   return (
     <div className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
       <Contactus />
       <Socials/>
+        <Cities />
     </div>
   );
 }
 
 function Footer() {
   return (
-    <div className="bg-[#3a2e2a] content-stretch flex flex-col h-[35vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
+    <div className="bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[35vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full" data-name="Mobile-Footer">
       <Footercontent />
     </div>
   );
