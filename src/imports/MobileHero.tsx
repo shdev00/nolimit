@@ -4,6 +4,7 @@ import Line4 from "./Line4";
 import imgHeroBackground from "../assets/b88c1766df9500c17fb036b3cfd4047d2efe8cc1.png";
 import banner from "../assets/sssnew2.mp4";
 import TextLogo from "./TextLogo";
+import MobLogo from "../assets/MobLogo.svg"
 import {useState} from "react";
 
 
@@ -31,13 +32,18 @@ export default function MobileHero() {
             <div className="md:hidden absolute top-0 left-0 w-full h-[72px] bg-[#B64220] z-30 flex items-center justify-between px-[20px]">
 
                 {/* LOGO */}
-                <div className="text-[#F1E9DA] text-[28px] font-bold">
-                    N
+                <div className="w-[36px] h-[36px] flex items-center">
+                    <img
+                        src={MobLogo}
+                        alt="logo"
+                        className="w-full h-full object-contain"
+                    />
                 </div>
 
                 {/* HAMBURGER */}
                 <button onClick={() => setMenuOpen(true)}>
-                    <div className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center">
+                    <div
+                        className="w-[36px] h-[36px] border border-[#F1E9DA] rounded-full flex items-center justify-center">
                         <div className="flex flex-col gap-[4px]">
                             <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
                             <div className="w-[14px] h-[2px] bg-[#F1E9DA]" />
