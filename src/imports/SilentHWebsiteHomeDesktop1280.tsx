@@ -13,7 +13,7 @@ import imgScreenshot20260224At34135Pm1 from "../assets/358c83f9ee4cb440d306cc5a5
 import imgScreenshot20260224At33952Pm1 from "../assets/7e6feab11736e6d4ff0f7e4d72d3a208dc3435cc.png";
 import imgW511 from "../assets/dda9ddf98bcef1501a24eede91678cadf12548a3.png";
 import affiliates from "../assets/affiliateshq.png"
-import CoterieVoFinalNew from "./CoterieVoFinalNew111";
+import HeroSec from "./HeroSec";
 import BackToTop from "./BackToTop";
 import MobileHero from "./MobileHero";
 import TextLogo from "./TextLogo";
@@ -1004,7 +1004,7 @@ export default function SilentHWebsiteHomeDesktop() {
 
             {/* HERO */}
             <section className="relative w-full h-[87vh] hidden md:block">
-                <CoterieVoFinalNew/>
+                <HeroSec/>
 
             </section>
 

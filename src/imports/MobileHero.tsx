@@ -1,5 +1,5 @@
 import Rectangle from "./Rectangle1";
-import Frame1616 from "./Frame1616";
+import Frame1616 from "./Logo";
 import Line4 from "./Line4";
 import imgHeroBackground from "../assets/b88c1766df9500c17fb036b3cfd4047d2efe8cc1.png";
 import banner from "../assets/sssnew2.mp4";

@@ -1,6 +1,6 @@
 import svgPaths from "./svg-tf9feoi3wf";
 
-function Group() {
+function LogoGroup() {
   return (
     <div className="h-[91.692px] relative shrink-0 w-[463px]">
       <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 463 91.6919">
@@ -24,10 +24,10 @@ function Group() {
   );
 }
 
-export default function Frame() {
+export default function Logo() {
   return (
     <div className="content-stretch flex flex-col gap-[40px] pl-[9%] items-start relative size-full">
-      <Group />
+      <LogoGroup />
       <p style={{ textEdge: "cap" }} className="font-['Helvetica:Regular',sans-serif] leading-[1.5] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[14px] tracking-[2.8px] uppercase w-[min-content]">We craft stories that move people and strategies that shift perception. We don’t follow culture, we help shape it.</p>
     </div>
   );
