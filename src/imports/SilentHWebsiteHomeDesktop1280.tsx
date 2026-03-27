@@ -99,7 +99,7 @@ function WhatWeDoSection() {
             <div className="max-w-[1580px] 2xl:max-w-[2083px] mx-auto px-[72px] flex justify-between items-start">
 
                 {/* LEFT */}
-                <div className="max-w-[420px] 2xl:max-w-[683px] mt-[23.3%] 2xl:mt-[7.5%]">
+                <div className="max-w-[420px] 2xl:max-w-[683px] mt-[18.3%] 2xl:mt-[7%]">
                     <p className="font-['Rangen'] text-[64px] 2xl:text-[100px] 2xl:ml-[7%] leading-[1.2] text-[#f1e9da]">
                         The things we’re good at
                     </p>
@@ -109,41 +109,67 @@ function WhatWeDoSection() {
                 <div className="w-[640px] 2xl:w-[941px] 2xl:mt-0 mt-[8.8%] flex flex-col">
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed  border-[#f1e9da]/70">
-                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] 2xl:text-[29.3px] tracking-[1.5px] text-[#f1e9da] uppercase w-[300px] 2xl:text-[29.3px] 2xl:w-[488px]">
+                    <div
+                        className="group flex justify-between gap-[40px]">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[20px] 2xl:text-[29.3px]
+                        tracking-[1.5px] leading-[120%] text-[#f1e9da] uppercase w-[300px] 2xl:text-[29.3px] 2xl:w-[488px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
                             Campaign Strategy & Activation
                         </p>
-                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px] leading-[1.6] text-[#f1e9da] w-[300px]">
-                            Culture-led campaigns that create real-world moments. We get people talking and keep them talking.
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px]
+                        leading-[1.2] tracking-[0.98px] text-[#f1e9da] w-[300px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
+                            Culture-led campaigns that create real-world moments. We get people talking and keep them
+                            talking.
                         </p>
                     </div>
+                    <div className="w-full mt-[16px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed border-[#f1e9da]/70">
-                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px]">
+                    <div
+                        className="group flex justify-between gap-[40px] py-[16px]">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[20px] tracking-[1.5px] leading-[120%]
+                        text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
                             Brand Storytelling & Copywriting
                         </p>
-                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px] leading-[1.6] text-[#f1e9da] w-[300px]">
-                            From manifestos to campaign copy to tone of voice, we give your brand a voice people actually want to hear.
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px]
+                        2xl:w-[400px] leading-[1.2] tracking-[0.98px] text-[#f1e9da] w-[300px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
+                            From manifestos to campaign copy to tone of voice, we give your brand a voice people
+                            actually want to hear.
                         </p>
                     </div>
+                    <div className="w-full mt-[16px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px] border-b border-dashed  border-[#f1e9da]/70">
-                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px]">
+                    <div
+                        className="group flex justify-between gap-[40px] py-[16px]">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[20px] tracking-[1.5px] leading-[1.2]
+                        text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
                             Content Creation & Direction
                         </p>
-                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px] leading-[1.6] text-[#f1e9da] w-[300px]">
-                            Content that stops the scroll and starts the conversation. Strategy, creative direction, and production — end to end.
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px]
+                        leading-[1.2] tracking-[0.98px] text-[#f1e9da] w-[300px] text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300">
+                            Content that stops the scroll and starts the conversation. Strategy, creative direction, and
+                            production — end to end.
                         </p>
                     </div>
+                    <div className="mt-[16px] h-[1px] opacity-60
+    bg-[linear-gradient(to_right,#f1e9da_0%,#f1e9da_45%,transparent_45%,transparent_75%)]
+    bg-[length:14px_1px] bg-repeat-x"
+                    />
 
                     {/* ITEM */}
-                    <div className="flex justify-between gap-[40px] py-[24px]">
-                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[18px] tracking-[1.5px] text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px]">
+                    <div className="group flex justify-between gap-[40px] py-[16px]">
+                        <p className="font-['Helvetica:Bold',sans-serif] font-[700] text-[20px] tracking-[1.5px] leading-[120%]
+                        text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300 text-[#f1e9da] uppercase 2xl:text-[29.3px] 2xl:w-[488px] w-[300px]">
                             Community & Social Strategy
                         </p>
-                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px] leading-[1.6] text-[#f1e9da] w-[300px]">
+                        <p className="font-['Helvetica',sans-serif] font-[400] text-[16px] 2xl:text-[19px] 2xl:w-[400px]
+                        text-[#f1e9da] group-hover:text-[#B64220] transition-colors duration-300 leading-[1.2] tracking-[0.98px] text-[#f1e9da] w-[300px]">
                             Audiences are built, not bought. We turn followers into fans and fans into advocates.
                         </p>
                     </div>
