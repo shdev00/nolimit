@@ -42,7 +42,7 @@ function Affiliates() {
 
 function MobileAffiliates() {
     return (
-        <div className="relative size-full" data-name="Affiliates">
+        <div className="relative size-full pb-[175px]" data-name="Affiliates">
             <h2 className="font-['Rangen'] text-[#3A2E2A] text-[40px] leading-[1.2] tracking-[2px] text-center pb-[80px]">Our Co-Authors</h2>
             <img src={MobileAuthors} className="mt-[180px] w-[681px] h-[370.1px] scale-[2.19] object-contain"/>
         </div>
@@ -800,6 +800,37 @@ function FooterContentD() {
     );
 }
 
+
+
+function FootercontentM() {
+    return (
+        <div
+            className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
+            <Contactus/>
+            <Socials/>
+        <Cities />
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+      <div>
+          <div
+              className="hidden md:block bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[45vh] 2xl:h-[41vh] items-center justify-center left-0 px-[20px] py-[80px] w-full"
+              data-name="Desktop-Footer">
+              <FooterContentD/>
+          </div>
+          <div
+              className="md:hidden bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[50vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full"
+              data-name="Mobile-Footer">
+              <FootercontentM/>
+          </div>
+      </div>
+
+  );
+}
+
 function HoverVideo({ img, video, className }) {
     const videoRef = useRef(null);
     const [muted, setMuted] = useState(true);
@@ -864,35 +895,6 @@ function HoverVideo({ img, video, className }) {
             </button>
         </div>
     );
-}
-
-function FootercontentM() {
-    return (
-        <div
-            className="content-stretch flex flex-col gap-[0px] items-center justify-center relative shrink-0 w-[1172px]">
-            <Contactus/>
-            <Socials/>
-        <Cities />
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-      <div>
-          <div
-              className="hidden md:block bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[45vh] 2xl:h-[41vh] items-center justify-center left-0 px-[20px] py-[80px] w-full"
-              data-name="Desktop-Footer">
-              <FooterContentD/>
-          </div>
-          <div
-              className="md:hidden bg-[#3a2e2a] content-stretch flex flex-col h-[50vh] xl:h-[50vh] 2xl:h-[41vh] items-center justify-center left-0 px-[36px] py-[80px] w-full"
-              data-name="Mobile-Footer">
-              <FootercontentM/>
-          </div>
-      </div>
-
-  );
 }
 
 function LucideInfinity() {
@@ -1409,7 +1411,7 @@ export default function SilentHWebsiteHomeDesktop() {
             </section>
 
             {/* MOBILE AFFILIATES */}
-            <section className="md:hidden h-[115vh] mt-[80px]">
+            <section className="md:hidden mt-[80px]">
                 <MobileAffiliates/>
             </section>
 
