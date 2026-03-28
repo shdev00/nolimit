@@ -218,7 +218,7 @@ function WhatWeDoMobile() {
                         font-[700]
                         text-[16px]
                         tracking-[1.2px]
-                        leading-[1.12px]
+                        leading-tight
                         text-[#f1e9da]
                         uppercase
                         mb-[20px]
