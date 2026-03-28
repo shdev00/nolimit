@@ -615,20 +615,36 @@ function Contactus() {
 
 function LucideInstagram() {
     return (
-        <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/instagram">
-        <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="lucide/instagram">
-          <path d={svgPaths.p18a68ff0} id="Vector" stroke="var(--stroke-0, #F1E9DA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-        </g>
-      </svg>
-    </div>
-  );
+        <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative shrink-0 size-[24px] 2xl:size-[39px]"
+        >
+            <svg
+                className="absolute block size-full"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 24 24"
+            >
+                <g id="lucide/instagram">
+                    <path
+                        d={svgPaths.p18a68ff0}
+                        stroke="var(--stroke-0, #F1E9DA)"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                    />
+                </g>
+            </svg>
+        </a>
+    );
 }
 
 function LucideFacebook() {
-  return (
-    <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/facebook">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+    return (
+        <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/facebook">
+            <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
         <g id="lucide/facebook">
           <path d={svgPaths.p3d19f300} id="Vector" stroke="var(--stroke-0, #F1E9DA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
         </g>
