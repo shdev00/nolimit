@@ -21,7 +21,7 @@ export default function HeroSec() {
                   muted
                   loop
                   playsInline
-                  className="hidden xl:flex
+                  className="
                     w-full h-full
                     object-cover
 
@@ -43,37 +43,6 @@ export default function HeroSec() {
                   "
               >
                   <source src="/newbg-optimized.mp4" type="video/mp4"/>
-              </video>
-
-              {/* Laptops less than xl but not mobile background - full width */}
-
-              <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="xl:hidden
-                    w-full h-full
-                    object-cover
-
-                    /* MOBILE / TABLET ONLY */
-                    object-[center_35%]
-                    scale-[1.08]
-
-                    sm:object-[center_40%]
-                    md:object-[center_45%]
-                    lg:object-[center_48%]
-
-
-                    xl:object-[center_45%]
-                    2xl:object-[center_51.6%]
-
-                    xl:scale-100
-
-                    pointer-events-none
-                  "
-              >
-                  <source src={banner2} type="video/mp4"/>
               </video>
 
           </div>
