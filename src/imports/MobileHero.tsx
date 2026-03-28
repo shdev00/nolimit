@@ -89,7 +89,7 @@ export default function MobileHero() {
                                     tracking-[3.92px]
                                     uppercase
                                     text-[#F1E9DA
-                                    active:text-[#B64220]]"
+                                    active:text-[#B64220]"
                                href="#beliefsM" onClick={() => setMenuOpen(false)}>
                                 OUR BELIEFS
                             </a>
