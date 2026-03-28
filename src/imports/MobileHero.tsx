@@ -88,7 +88,8 @@ export default function MobileHero() {
                                     leading-[56px]
                                     tracking-[3.92px]
                                     uppercase
-                                    text-[#F1E9DA]"
+                                    text-[#F1E9DA
+                                    active:text-[#B64220]]"
                                href="#beliefsM" onClick={() => setMenuOpen(false)}>
                                 OUR BELIEFS
                             </a>
@@ -100,7 +101,8 @@ export default function MobileHero() {
                                     leading-[56px]
                                     tracking-[3.92px]
                                     uppercase
-                                    text-[#F1E9DA]" href="#servicesM" onClick={() => setMenuOpen(false)}>
+                                    text-[#F1E9DA]
+                                    active:text-[#B64220]" href="#servicesM" onClick={() => setMenuOpen(false)}>
                                 SERVICES
                             </a>
 
@@ -111,7 +113,8 @@ export default function MobileHero() {
                                     leading-[56px]
                                     tracking-[3.92px]
                                     uppercase
-                                    text-[#F1E9DA]" href="#contact" onClick={() => setMenuOpen(false)}>
+                                    text-[#F1E9DA]
+                                    active:text-[#B64220]" href="#contact" onClick={() => setMenuOpen(false)}>
                                 CONTACT
                             </a>
 
