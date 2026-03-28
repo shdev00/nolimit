@@ -25,7 +25,7 @@ export default function MobileHero() {
                     playsInline
                     className="w-full h-full object-cover"
                 >
-                    <source src={banner} type="video/mp4"/>
+                    <source src="/mobile-optimized.mp4" type="video/mp4"/>
                 </video>
             </div>
             {/* MOBILE NAV BAR */}
