@@ -617,7 +617,7 @@ function Contactus() {
 function LucideInstagram() {
     return (
         <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/notlimited.ca"
             target="_blank"
             rel="noopener noreferrer"
             className="relative shrink-0 size-[24px] 2xl:size-[39px]"
@@ -644,41 +644,64 @@ function LucideInstagram() {
 
 function LucideFacebook() {
     return (
-        <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="lucide/facebook">
-            <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="lucide/facebook">
-          <path d={svgPaths.p3d19f300} id="Vector" stroke="var(--stroke-0, #F1E9DA)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-        </g>
-      </svg>
-    </div>
-  );
+        <a
+            href="https://www.facebook.com/profile.php?id=61577655854205"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative shrink-0 size-[24px] 2xl:size-[39px]"
+        >
+            <svg
+                className="absolute block size-full"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 24 24"
+            >
+                <g id="lucide/facebook">
+                    <path d={svgPaths.p3d19f300} id="Vector" stroke="var(--stroke-0, #F1E9DA)" strokeLinecap="round"
+                          strokeLinejoin="round" strokeWidth="2"/>
+                </g>
+            </svg>
+        </a>
+    );
 }
 
+{/*Tiktok Icon*/}
 function Layer() {
-  return (
-    <div className="relative shrink-0 size-[24px] 2xl:size-[39px]" data-name="Layer_1">
-      <svg className="absolute block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-        <g id="Layer_1">
-          <path d={svgPaths.pa940c00} fill="var(--fill-0, #F1E9DA)" id="Vector" />
-        </g>
-      </svg>
-    </div>
-  );
+    return (
+        <a
+            href="https://www.tiktok.com/@notlimited.ca?_r=1&_t=ZS-957uZKGt7UV"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative shrink-0 size-[24px] 2xl:size-[39px]"
+        >
+            <svg
+                className="absolute block size-full"
+                fill="none"
+                preserveAspectRatio="none"
+                viewBox="0 0 24 24"
+            >
+                <g id="Layer_1">
+                    <path d={svgPaths.pa940c00} fill="var(--fill-0, #F1E9DA)" id="Vector"/>
+                </g>
+            </svg>
+        </a>
+    );
 }
 
 function SocialTags() {
-  return (
-    <div className="content-stretch flex gap-[32px] 2xl:gap-[52px] items-center relative shrink-0">
-      <LucideInstagram />
-      <LucideFacebook />
-      <Layer />
-    </div>
-  );
+    return (
+        <div className="content-stretch flex gap-[32px] 2xl:gap-[52px] items-center relative shrink-0">
+            <LucideInstagram/>
+            <LucideFacebook/>
+            <Layer/>
+        </div>
+    );
 }
 
 function Socials() {
-  return (
-    <div className="content-stretch flex flex-col gap-[20px] items-center justify-center xl:items-start xl:justify-start relative shrink-0 w-[235px] 2xl:w-[382.5px] xl:ml-[6%] ">
+    return (
+        <div
+            className="content-stretch flex flex-col gap-[20px] items-center justify-center xl:items-start xl:justify-start relative shrink-0 w-[235px] 2xl:w-[382.5px] xl:ml-[6%] ">
       <p className="font-['Rangen'] leading-[1.2] min-w-full not-italic relative shrink-0 text-[#f1e9da] text-[20px] 2xl:text-[32.56px] text-center xl:text-start tracking-[0.8px] w-[min-content] whitespace-pre-wrap">Let's get social</p>
       <SocialTags />
     </div>
