@@ -1489,10 +1489,10 @@ export default function NotLimited() {
                     <MobileTapVideo img={img2} video="/Vid2-compressed.mp4" className="h-[570px]" />
                     <MobileTapVideo img={img3} video="/Vid3-compressed.mp4" className="h-[570px]" />
                     <MobileTapVideo img={img4} video="/vid4-compressed.mp4" className="h-[220px]" />
-                    <MobileTapVideo img={img6} video="/vid5-compressed.mp4" className="h-[570px]" />
+                    <MobileTapVideo img={img6} video="/compressed_1.mp4" className="h-[570px]" />
                     <MobileTapVideo img={img7} video="/vid6-compressed.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img8} video="/vid7-compressed.mp4" className="h-[570px]" />
-                    <MobileTapVideo img={img9} video="/vid8-compressed.mp4" className="h-[220px]" />
+                    <MobileTapVideo img={img8} video="/compressed_3.MP4" className="h-[570px]" />
+                    <MobileTapVideo img={img9} video="/compressed_2.mp4" className="h-[220px]" />
 
                 </div>
 
