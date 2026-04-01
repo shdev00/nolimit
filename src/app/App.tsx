@@ -1,5 +1,5 @@
-import SilentHWebsiteHomeDesktop from "../imports/SilentHWebsiteHomeDesktop1280";
+import NotLimited from "../imports/NotLimited";
 
 export default function App() {
-  return <SilentHWebsiteHomeDesktop />;
+  return <NotLimited />;
 }
